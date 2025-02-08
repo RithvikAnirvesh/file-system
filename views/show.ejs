@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= filename %></title> <!-- Set the title dynamically -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900 p-10 text-white">
+        <h1 class="text-3xl font-bold mb-4"><%= filename %></h1> <!-- Display the file name -->
+        <pre class="bg-zinc-800 p-5 rounded-lg whitespace-pre-wrap"><%= content %></pre> <!-- Display file content -->
+        <a href="/" class="mt-4 inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Go Back to home page</a>
+    </div>
+</body>
+</html>
